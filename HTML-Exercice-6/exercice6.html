@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> HTML EXERCICE 6 </title>
+</head>
+
+<body>
+    <p><strong> Reproduire l'image correspondant à l'exercice.
+            Ce formulaire contient 3 parties et un bouton. </strong></p>
+    <img src="img/html-ex6.PNG">
+    <!-- fieldset *  est utilisé afin de regrouper plusieurs contrôles interactifs ainsi que des étiquettes ( <label> ) dans un formulaire web.
+     label * représente une légende pour un objet d'une interface utilisateur. 
+     Il peut être associé à un contrôle en utilisant l'attribut for ou en plaçant l'élément du contrôle à l'intérieur de l'élément.
+     (!) for pointe toujours vers un ID
+     Input *  est utilisé pour créer un contrôle interactif dans un formulaire web qui permet à l'utilisateur de saisir des données.
+      Input type « text » /Input type « password »/Input type « radio »/ Input type « checkbox »/Input type « file »
+    Input type « hidden » / Input type « reset » /Input type « button » / Input type « submit »
+Placeholder * est un attribut qui permet de renseigner un texte indicatif par défaut dans un champ de formulaire. -->.
+
+    <form>
+        <fieldset>
+            <legend>Votre identité</legend>
+            <label for="lName">1. Nom : </label>
+            <input type="text" id="lName" name="lName" placeholder="Nom">
+            <br>
+            <label for="fName">2. Prénom : </label>
+            <input type="text" id="fName" name="fName" placeholder="Prénom">
+        </fieldset>
+        <fieldset>
+            <legend>Adresse de livraison</legend>
+            <label for="location">1. Adresse : </label>
+            <input id="location" name="location" placeholder="Adresse">
+            <br>
+            <label for="zipCode">2. Code Postal :</label>
+            <input type="text" id="zipCode" name="zipCode" placeholder="Code Postal">
+            <br>
+            <label for="town">3. Ville :</label>
+            <input type="text" id="town" name="town" placeholder="Ville">
+        </fieldset>
+        <fieldset>
+            <legend>Information de réglement</legend>
+            <p>1. Carte de paiement : </p>
+            <input type="radio" id="VISA" name="card" value="VISA">
+            <label for="VISA">VISA</label><br>
+            <input type="radio" id="Mastercard" name="card" value="Mastercard">
+            <label for="Mastercard">Mastercard</label>
+            <br>
+            <label for="cardNumber">2. Numéro de carte :</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="Numero de carte">
+            <br>
+            <label for="securityNumber">3. Code de sécurité :</label>
+            <input type="text" id="securityNumber" name="securityNumber" placeholder="Code de securité">
+            <br>
+            <label for="owner">4. Nom du titulaire : </label>
+            <input type="text" id="owner" name="owner" placeholder="Nom du titulaire">
+        </fieldset>
+        <input type="submit" value="J'achète !">
+    </form>
+</body>
+
+</html>
